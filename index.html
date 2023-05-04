@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider con dots y botones de navegación</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="body">
+    <main class="container">
+        <section id="banner">
+            <div class="carousel">
+                <div class="title-carousel">
+                    <h2>Carousel A-1</h2>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg"
+                                    alt="image 1" />
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Title 1</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn-linl">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg"
+                                    alt="Image 2">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Title 2</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg"
+                                    alt="Image 3">
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title">Title 3</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <div class="carousel-buttons">
+
+                        <button class="carousel-button carousel-button-prev btn"><i class="fa-solid fa-circle-chevron-left"></i></button>
+                        <button class="carousel-button carousel-button-next btn"><i class="fa-solid fa-circle-chevron-right"></i></button>
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="carousel-dot active"></button>
+                        <button class="carousel-dot"></button>
+                        <button class="carousel-dot"></button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="cards">
+            <div class="carousel-cards">
+                <div class="title-carousel">
+                    <h2>Carousel A-2</h2>
+                </div>
+                <div class="carousel-a2" item-display-d="3" item-display-t="2" item-display-m="1">
+                    <div class="item-a2-container">
+                        <div class="item-a2">
+                            <h2>Card 1</h2>
+                        </div>
+                        <div class="item-a2">
+                            <h2>Card 2</h2>
+                        </div>
+                        <div class="item-a2">
+                            <h2>Card 3</h2>
+                        </div>
+                        <div class="item-a2">
+                            <h2>Card 4</h2>
+                        </div>
+                        <div class="item-a2">
+                            <h2>Card 5</h2>
+                        </div>
+                        <div class="item-a2">
+                            <h2>Card 6</h2>
+                        </div>
+                        <div class="item-a2">
+                            <h2>Card 7</h2>
+                        </div>
+                        <div class="item-a2">
+                            <h2>Card 8</h2>
+                        </div>
+                        <div class="item-a2">
+                            <h2>Card 9</h2>
+                        </div>
+                        <div class="item-a2">
+                            <h2>Card 10</h2>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-a2" oncanplay="prev()"><i class="fa-solid fa-circle-chevron-left"></i></button>
+                <button type="button" class="btn btn-a2" oncanplay="next()"><i class="fa-solid fa-circle-chevron-right"></i></button>
+            </div>
+        </section>
+    </main>
+    <script src="main.js" defer></script>
+</body>
+
+</html>

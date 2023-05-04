@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.body{
+    background-color: #444;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.title-carousel{
+    padding: 1rem 0;
+    color: #b8b8d4;
+}
+
+#banner, #card{
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.carousel {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  padding: 1rem;
+  background-color: aqua;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.card-img{
+    width: 100%;
+    max-height: 10rem;
+    overflow: hidden;
+}
+
+.card-img img {
+width: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card-text {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #f2f2f2;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: -20%;
+  right: 10%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 999;
+}
+
+.carousel-buttons {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+.carousel-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #999;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+  height: fit-content;
+}
+.btn{
+    color: #ddd;
+    background-color: #3636f7;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #999;
+  color: #fff;
+  border-color: #999;
+}
+
+.carousel-button-prev {
+  margin-right: 10px;
+}
+
+.carousel-dots {
+  display: flex;
+}
+
+.carousel-dot {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  background-color: #999;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-dot.active {
+  background-color: #fff;
+}
+
+
+/*CAROUSEL A-2*/
+
+.carousel-a2{
+    position: relative;
+    overflow-x: hidden;
+    height: 20rem;
+    width: 100%;
+}
+.item-a2-container{
+    position: absolute;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: .4s ease-in-out;
+    gap: 1rem;
+    margin: 2rem;
+    overflow-x: hidden;
+}
+.item-a2{
+    background-color: #f8cf1b;
+    width: 21.75rem;
+    height: 11.875rem;
+    display: grid;
+    place-content: center;
+    border-radius: 1rem;
+}
+.btn-a2{
+    position: absolute;
+    bottom: 30%;
+}
+.btn-a2:last-child{
+    right: 5%;
+}
